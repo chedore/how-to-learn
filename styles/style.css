@@ -202,6 +202,70 @@ div, header, .description, section {
   margin: 20px 0 0;
 }
 
+/*==4 секция==*/
+
+.feynman {
+  display: flex;
+  margin-top: 100px;
+  height: 890px;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: -1;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*1 элемент*/
+.feynman__title {
+  width: 648px;
+  font-size: 120px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  z-index: auto;
+}
+
+/*2 элемент*/
+.feynman__subtitle {
+  margin-top: 70px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  margin: 0;
+  z-index: auto;
+
+}
+
+/*3 элемент*/
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  text-decoration: none;
+  z-index: auto;
+  color: #2f80ed;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+}
+
+/*4 элемент*/
+.feynman__image {
+  height: 637px;
+  width: 867px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
