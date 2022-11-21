@@ -1,6 +1,6 @@
-/* div, header{
+div, header, .description{
   border: 1px solid red;
-} */
+}
 
 .page {
   min-width: 1100px;
@@ -21,7 +21,7 @@
 
 /*1 элемент*/
 .header__logo {
-  color: #10191E;
+  color: #10191e;
 }
 
 .header__logo_place_header {
@@ -75,7 +75,7 @@
 
 /*6 элемент*/
 .header__square-pic {
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
   position: absolute;
@@ -83,6 +83,65 @@
   right: 0;
   z-index: -1;
 }
+
+
+.description {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-content: center;
+  justify-content: center;
+}
+
+/*1 элемент*/
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 80%;
+}
+
+/*2 элемент*/
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 0;
+  color: #2f80ed;
+}
+
+/*3 элемент*/
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  list-style: none;
+  margin: 0;
+
+}
+
+/*4-6 элемент*/
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  box-sizing: content-box;
+  padding-top: 30px;
+
+}
+.two-columns__paragraph:first-child {
+  padding: 0px;
+}
+
+/*7 элемент*/
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
