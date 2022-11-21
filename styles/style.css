@@ -1,4 +1,4 @@
-div, header, .description{
+div, header, .description, section {
   border: 1px solid red;
 }
 
@@ -9,6 +9,7 @@ div, header, .description{
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*==1 секция==*/
 .header {
   display: flex;
   position: relative;
@@ -84,7 +85,7 @@ div, header, .description{
   z-index: -1;
 }
 
-
+/*==2 секция==*/
 .description {
   display: flex;
   margin-top: 100px;
@@ -140,7 +141,66 @@ div, header, .description{
   font-weight: bold;
 }
 
+/*==3 секция==*/
+.digits {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+/*1 элемент*/
+.section-title {
+  width: 60%;
+  font-size: 60px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin: 0;
+}
+
+/*2 элемент*/
+.section-subtitle {
+  width: 60%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 34px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin: 0;
+}
+
+/*3 элемент*/
+.table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 1100px;
+}
+
+.table__cell {
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 20px 0 0;
+}
 
 
 /* и элемента с модификатором вида ключ-значение */
