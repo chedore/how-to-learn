@@ -1,6 +1,6 @@
 header, section, footer, .page {
   /* border: 1px solid red; */
-  border: 1px solid #f2f2f2
+  border: 1px solid #f2f2f2;
 }
 
 .page {
@@ -411,7 +411,6 @@ header, section, footer, .page {
 
 /*8 элемент*/
 .footer__list-item {
-  line-height: 30px;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
