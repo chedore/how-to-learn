@@ -266,11 +266,46 @@ div, header, .description, section {
   z-index: -1;
 }
 
+/*==5 секция==*/
+.kaufman {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #1f1f1f;
+  padding-top: 90px;
+}
 
-/* и элемента с модификатором вида ключ-значение */
+/*1 элемент*/
+.section-title_theme-dark {
+  color: white;
+  z-index: auto;
+}
+
+/*2 элемент*/
+.section-subtitle_theme-dark {
+  color: white;
+  z-index: auto;
+}
+
+/*3 элемент*/
+.table_theme-dark {
+  color: white;
+  z-index: auto;
+  margin: 0 auto 90px;
+}
+
+/*4 элемент*/
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: auto;
+}
+
+/*5 элемент*/
+.kaufman__triangle {
 }
