@@ -1,6 +1,5 @@
-header, section, footer, .page {
-  /* border: 1px solid red; */
-  border: 1px solid #f2f2f2;
+header, footer, .page {
+  border: 1px solid red;
 }
 
 .page {
@@ -18,14 +17,14 @@ header, section, footer, .page {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  z-index: -1;
+  z-index: auto;
 }
 
 /*1 элемент*/
-
-.header__logo_place_header {
+.logo_place_header {
   margin: 30px 64px;
   position: absolute;
+  z-index: 2;
 }
 
 /*2 элемент*/
@@ -36,7 +35,7 @@ header, section, footer, .page {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600px;
-  z-index: auto;
+  z-index: 2;
 }
 
 /*3 элемент*/
@@ -48,21 +47,20 @@ header, section, footer, .page {
   margin: 0 64px 30px;
   position: absolute;
   align-self: flex-end;
-  z-index: auto;
+  z-index: 2;
 }
 
 /*4 элемент*/
-.header_link {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
 }
-.header_link:hover {
+.header__link:hover {
   opacity: 0.5;
 }
 
-
 /*5 элемент*/
-.header_main-illustration {
+.header__main-illustration {
   height: 608px;
   width: 765px;
   object-fit: cover;
@@ -80,7 +78,6 @@ header, section, footer, .page {
   position: absolute;
   top: 64px;
   right: 0;
-  z-index: -1;
 }
 
 /*==2 секция==*/
@@ -116,7 +113,6 @@ header, section, footer, .page {
   min-width: 784px;
   list-style: none;
   margin: 0;
-
 }
 
 /*4-6 элемент*/
@@ -126,8 +122,8 @@ header, section, footer, .page {
   font-weight: normal;
   box-sizing: content-box;
   padding-top: 30px;
-
 }
+
 .two-columns__paragraph:first-child {
   padding: 0px;
 }
@@ -156,7 +152,6 @@ header, section, footer, .page {
   text-align: center;
   line-height: 1.5;
   font-weight: bold;
-  margin-bottom: 20px;
   margin: 0;
 }
 
@@ -167,7 +162,6 @@ header, section, footer, .page {
   text-align: center;
   line-height: 34px;
   font-weight: normal;
-  margin-top: 20px;
   margin: 0;
 }
 
@@ -179,6 +173,8 @@ header, section, footer, .page {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 1100px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .table__cell {
@@ -201,14 +197,13 @@ header, section, footer, .page {
 }
 
 /*==4 секция==*/
-
 .feynman {
   display: flex;
   margin-top: 100px;
   height: 890px;
   position: relative;
   background-color: #f2f2f2;
-  z-index: -1;
+  z-index: auto;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -218,11 +213,11 @@ header, section, footer, .page {
 .feynman__title {
   width: 648px;
   font-size: 120px;
-  line-height: 1.5;
+  line-height: 1.15;
   font-weight: bold;
   margin: 0;
   text-align: center;
-  z-index: auto;
+  z-index: 2;
 }
 
 /*2 элемент*/
@@ -232,11 +227,21 @@ header, section, footer, .page {
   line-height: 51px;
   font-weight: normal;
   margin: 0;
-  z-index: auto;
-
+  z-index: 2;
 }
 
 /*3 элемент*/
+.feynman__image {
+  height: 637px;
+  width: 867px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*4 элемент*/
 .feynman__link {
   position: absolute;
   top: 50%;
@@ -245,7 +250,7 @@ header, section, footer, .page {
   line-height: 51px;
   font-weight: normal;
   text-decoration: none;
-  z-index: auto;
+  z-index: 1;
   color: #2f80ed;
 }
 
@@ -253,16 +258,6 @@ header, section, footer, .page {
   opacity: 0.5;
 }
 
-/*4 элемент*/
-.feynman__image {
-  height: 637px;
-  width: 867px;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
 
 /*==5 секция==*/
 .kaufman {
@@ -332,14 +327,11 @@ header, section, footer, .page {
   margin: 60px auto 40px;
 }
 
+/*N элемент*/
 .footer__column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.footer__logo_place_footer {
-  margin: 0;
 }
 
 /*2 элемент*/
@@ -347,6 +339,19 @@ header, section, footer, .page {
   margin: 0;
   flex-basis: 711px;
   justify-content: space-between;
+}
+
+/*2.1 элемент*/
+.logo_place_footer {
+  margin: 0 0;
+}
+
+/*2.2 элемент*/
+.footer__author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  margin: 18px 0;
 }
 
 /*3 элемент*/
@@ -358,25 +363,7 @@ header, section, footer, .page {
   margin: 0;
 }
 
-/*4 элемент*/
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  margin: 0;
-}
-
-
-/*5 элемент*/
-.footer__author {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: normal;
-  margin: 18px 0;
-}
-
-/*6 элемент*/
+/*3.1/4.1 элемент*/
 .footer__column-heading {
   font-size: 18px;
   line-height: 30px;
@@ -384,7 +371,7 @@ header, section, footer, .page {
   margin: 0;
 }
 
-/*7 элемент*/
+/*3.2/4.2 элемент*/
 .footer__column-links {
   margin-top: 20px;
   margin-bottom: 16px;
@@ -392,6 +379,7 @@ header, section, footer, .page {
   padding: 0;
 }
 
+/*3.3/4.2 элемент*/
 .footer__column-link {
   font-size: 18px;
   line-height: 30px;
@@ -409,7 +397,17 @@ header, section, footer, .page {
   opacity: 0.5;
 }
 
-/*8 элемент*/
+/*4 элемент*/
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+}
+
+
+/*4.4 элемент*/
 .footer__list-item {
   font-size: 18px;
   line-height: 30px;
@@ -419,7 +417,7 @@ header, section, footer, .page {
   color: white;
 }
 
-/*9 элемент*/
+/*4.5 элемент*/
 .footer__social-icon {
   height: 16px;
   width: 16px;
