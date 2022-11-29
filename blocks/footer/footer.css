@@ -12,8 +12,6 @@
 @import url(./__list-item/footer__list-item.css);
 @import url(./__social-icon/footer__social-icon.css);
 
-
-
 .footer {
   display: flex;
   min-height: 350px;

@@ -2,6 +2,16 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/rotation/rotation.css);
 
+
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/table/table.css);
+
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 
@@ -18,14 +28,28 @@
 
 @import url(../blocks/oakley/oakley.css);
 
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__image/feynman__image.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
 @import url(../blocks/feynman/feynman.css);
 
 @import url(../blocks/digits/digits.css);
 
 @import url(../blocks/khan/khan.css);
 
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 @import url(../blocks/kaufman/kaufman.css);
 
 @import url(../blocks/resources/resources.css);
 
+@import url(./__columns/footer__columns.css);
+
+@import url(./__column/footer__column.css);
+@import url(./__column/_content_copyright/footer__column_content_copyright.css);
+@import url(./__column/_content_info/footer__column_content_info.css);
+@import url(./__column/_content_social/footer__column_content_social.css);
+
+
 @import url(../blocks/footer/footer.css);
+
