@@ -1,0 +1,15 @@
+@import url(../section-title/section-title.css); /*Заголовок*/
+@import url(../section-subtitle/section-subtitle.css); /*Подзаголовок*/
+@import url(../table/table.css); /*Таблица*/
+
+
+
+.digits {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0;
+}

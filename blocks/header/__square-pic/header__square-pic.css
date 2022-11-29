@@ -6,5 +6,5 @@
   top: 64px;
   right: 0;
   animation: rotation 20s linear infinite backwards;
-  transform: translate(0,0px) rotate(165deg);
+  transform: translate(0px,0px) rotate(165deg);
 }

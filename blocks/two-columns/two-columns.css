@@ -1,0 +1,11 @@
+@import url(./__brief/two-columns__brief.css); /*Главные проблемы в обучении*/
+@import url(./__main-text/two-columns__main-text.css);
+@import url(./__paragraph/two-columns__paragraph.css); /*Осноной текст таблицы*/
+@import url(./__span-accent/two-columns__span-accent.css); /*bold текст*/
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 80%;
+}
