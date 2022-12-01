@@ -8,5 +8,4 @@
 
 .footer__column-link:hover {
   opacity: 0.5;
-  transform: opacity 5s linear;
 }
