@@ -1,5 +1,6 @@
 # Практическое задание 1-2
 
+[Демо](https://chedore.github.io/how-to-learn/index.html) на GitHub Pages.
 ---
 ## Задание
 
